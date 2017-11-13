@@ -1,0 +1,97 @@
+\hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n}{}\section{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON Class Reference}
+\label{class_o_p_t_i_m_i_s_a_t_i_o_n}\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+
+
+{\ttfamily \#include $<$O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N.\+h$>$}
+
+Inheritance diagram for O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_o_p_t_i_m_i_s_a_t_i_o_n}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a3f2fcfe6f4cf0f58ddbf371f5c8ff7b5}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a3f2fcfe6f4cf0f58ddbf371f5c8ff7b5}} 
+virtual const std\+::vector$<$ double $>$ {\bfseries optimise} (const std\+::vector$<$ double $>$ start)=0
+\item 
+\mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_aacf344bc5597a9e43ac1ab3d7524c99d}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_aacf344bc5597a9e43ac1ab3d7524c99d}} 
+virtual const std\+::vector$<$ double $>$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_aacf344bc5597a9e43ac1ab3d7524c99d}{get\+\_\+arg} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual method to argument for min value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a82e3d63c255420296cff9d5ac7e0c439}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a82e3d63c255420296cff9d5ac7e0c439}} 
+virtual const double \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a82e3d63c255420296cff9d5ac7e0c439}{get\+\_\+val} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual method to get argument after optimization. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_ac45869edc3951dbe68fb0b3293b53c28}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_ac45869edc3951dbe68fb0b3293b53c28}} 
+virtual const unsigned int \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_ac45869edc3951dbe68fb0b3293b53c28}{get\+\_\+iterations} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual method to get min value after optimization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_f_u_n_c}{F\+U\+NC} $\ast$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a7301208a647b51b5880ffc1a23da1453}{\+\_\+f}
+\item 
+\hyperlink{class_a_r_e_a}{A\+R\+EA} $\ast$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_ae7b53c1ad284d2da7293acf32dedff33}{\+\_\+area}
+\item 
+\hyperlink{class_s_t_o_p}{S\+T\+OP} $\ast$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a756cffba62054d4c9f54b8575e0d771e}{\+\_\+stop}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a049bd3ae26ad1519bbdc81a434e0a886}{\+\_\+curr\+\_\+pos}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a9fe2a8559d57479f92ade3ea0fe52ef9}{\+\_\+result}
+\item 
+double \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_ab894cbac492adc44c0731f89e99e8a58}{\+\_\+val}
+\item 
+unsigned int \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n_a7cff0cfa22d26eaf057526b1cc0936a2}{\+\_\+iterations} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base \hyperlink{class_o_p_t_i_m_i_s_a_t_i_o_n}{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON} class 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_ae7b53c1ad284d2da7293acf32dedff33}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_ae7b53c1ad284d2da7293acf32dedff33}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+area@{\+\_\+area}}
+\index{\+\_\+area@{\+\_\+area}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+area}{\_area}}
+{\footnotesize\ttfamily \hyperlink{class_a_r_e_a}{A\+R\+EA}$\ast$ O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+area\hspace{0.3cm}{\ttfamily [protected]}}
+
+pointer to a \hyperlink{class_a_r_e_a}{A\+R\+EA} \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a049bd3ae26ad1519bbdc81a434e0a886}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a049bd3ae26ad1519bbdc81a434e0a886}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+curr\+\_\+pos@{\+\_\+curr\+\_\+pos}}
+\index{\+\_\+curr\+\_\+pos@{\+\_\+curr\+\_\+pos}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+curr\+\_\+pos}{\_curr\_pos}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+curr\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current position vector \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a7301208a647b51b5880ffc1a23da1453}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a7301208a647b51b5880ffc1a23da1453}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+f@{\+\_\+f}}
+\index{\+\_\+f@{\+\_\+f}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+f}{\_f}}
+{\footnotesize\ttfamily \hyperlink{class_f_u_n_c}{F\+U\+NC}$\ast$ O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+f\hspace{0.3cm}{\ttfamily [protected]}}
+
+pointer to a \hyperlink{class_f_u_n_c}{F\+U\+NC} \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a7cff0cfa22d26eaf057526b1cc0936a2}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a7cff0cfa22d26eaf057526b1cc0936a2}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+iterations@{\+\_\+iterations}}
+\index{\+\_\+iterations@{\+\_\+iterations}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+iterations}{\_iterations}}
+{\footnotesize\ttfamily unsigned int O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+iterations = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of iterations of algorithm \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a9fe2a8559d57479f92ade3ea0fe52ef9}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a9fe2a8559d57479f92ade3ea0fe52ef9}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+result@{\+\_\+result}}
+\index{\+\_\+result@{\+\_\+result}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+result}{\_result}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+result\hspace{0.3cm}{\ttfamily [protected]}}
+
+Optimization result vector \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_a756cffba62054d4c9f54b8575e0d771e}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_a756cffba62054d4c9f54b8575e0d771e}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+stop@{\+\_\+stop}}
+\index{\+\_\+stop@{\+\_\+stop}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+stop}{\_stop}}
+{\footnotesize\ttfamily \hyperlink{class_s_t_o_p}{S\+T\+OP}$\ast$ O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+stop\hspace{0.3cm}{\ttfamily [protected]}}
+
+pointer to a \hyperlink{class_s_t_o_p}{S\+T\+OP} \mbox{\Hypertarget{class_o_p_t_i_m_i_s_a_t_i_o_n_ab894cbac492adc44c0731f89e99e8a58}\label{class_o_p_t_i_m_i_s_a_t_i_o_n_ab894cbac492adc44c0731f89e99e8a58}} 
+\index{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}!\+\_\+val@{\+\_\+val}}
+\index{\+\_\+val@{\+\_\+val}!O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON@{O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+ON}}
+\subsubsection{\texorpdfstring{\+\_\+val}{\_val}}
+{\footnotesize\ttfamily double O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N\+::\+\_\+val\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hyperlink{class_f_u_n_c}{F\+U\+NC} value of optimization result vector 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+spbsu\+\_\+optimization/O\+P\+T\+I\+M\+I\+S\+A\+T\+I\+O\+N.\+h\end{DoxyCompactItemize}
