@@ -36,4 +36,11 @@ public:
 	const int get_dim(void);//! Virtual method to get dimention
 };
 
+class Simple3D : public FUNC {
+	double a, b, c;
+public:
+	Simple3D(double a = 1, double b = 1, double c = 1);
+	const double val(const std::vector<double> x);//! Virtual method to get value
+	const int get_dim(void);//! Virtual method to get dimention
+};
 

@@ -22,7 +22,8 @@ public:
 /*! Heir of STOP class: Stop by vector norm */
 class ArgNorm : public STOP {
 	double eps;
-	bool s = true;
+	double sum;
+	unsigned int N_iter = 0, N_MAX = 1000000;
 public:
 	ArgNorm(double eps);
 	bool status();

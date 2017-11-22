@@ -26,17 +26,18 @@ ArgNorm::ArgNorm(double eps)
 
 bool ArgNorm::status()
 {
-	return s;
+	if ((this->sum < this->eps) || (this->N_iter >= this->N_MAX)) {
+		return false;
+	}
+	return true;
 }
 
 void ArgNorm::update(std::vector<double> x_curr, std::vector<double> x_prev, double f_curr, double f_prev)
 {
 	double sum = 0;
+	++(this->N_iter);
 	for (int i = 0; i < x_curr.size(); ++i) {
 		sum += ((x_curr[i] - x_prev[i])*(x_curr[i] - x_prev[i]));
 	}
 	sum = sqrt(sum);
-	if (sum < this->eps) {
-		this->s = false;
-	}
 }

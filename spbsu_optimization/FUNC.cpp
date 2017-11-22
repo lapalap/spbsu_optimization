@@ -48,3 +48,21 @@ const int LeviN13::get_dim(void)
 {
 	return 2;
 }
+
+Simple3D::Simple3D(double a, double b, double c)
+{
+	this->a = a;
+	this->b = b;
+	this->c = c;
+
+}
+
+const double Simple3D::val(const std::vector<double> x)
+{
+	return a*x[0] * x[0] + b * x[1] * x[1] + c*x[2] * x[2];;
+}
+
+const int Simple3D::get_dim(void)
+{
+	return 3;
+}

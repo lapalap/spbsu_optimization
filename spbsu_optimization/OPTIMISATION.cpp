@@ -40,9 +40,9 @@ const std::vector<double> Coordinate_wise::optimise(const std::vector<double> st
 				}
 			}
 			argmin[i] = (left + right) / 2.;
-			++_iterations;
 			}
 			_stop->update(argmin, prev_pos, _f->val(argmin), _f->val(prev_pos));
+			++_iterations;
 		}
 		this->_result = argmin;
 		this->_val = _f->val(argmin);
