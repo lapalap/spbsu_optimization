@@ -19,9 +19,10 @@ void Iterations::update(std::vector<double> x_curr, std::vector<double> x_prev ,
 	++(this->N_iter);
 }
 
-ArgNorm::ArgNorm(double eps)
+ArgNorm::ArgNorm(double epsilon)
 {
-	this->eps = eps;
+	this->eps = epsilon;
+	this->sum = 1;
 }
 
 bool ArgNorm::status()
@@ -34,10 +35,10 @@ bool ArgNorm::status()
 
 void ArgNorm::update(std::vector<double> x_curr, std::vector<double> x_prev, double f_curr, double f_prev)
 {
-	double sum = 0;
+	this->sum = 0;
 	++(this->N_iter);
 	for (int i = 0; i < x_curr.size(); ++i) {
-		sum += ((x_curr[i] - x_prev[i])*(x_curr[i] - x_prev[i]));
+		this->sum += ((x_curr[i] - x_prev[i])*(x_curr[i] - x_prev[i]));
 	}
-	sum = sqrt(sum);
+	this->sum = sqrt(this->sum);
 }

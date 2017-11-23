@@ -97,8 +97,10 @@ int main() {
 		double num;
 		while (stream >> num) bounds.push_back(num);
 		if (bounds.size() != 2 * func->get_dim()) error = true;
-		for (int i = 0; i < func->get_dim(); ++i) {
-			if (bounds[2*i] > bounds[2*i+1]) error = true;
+		else {
+			for (int i = 0; i < func->get_dim(); ++i) {
+				if (bounds[2 * i] > bounds[2 * i + 1]) error = true;
+			}
 		}
 		if (error) {
 			try
@@ -124,6 +126,7 @@ int main() {
 
 		try
 		{
+			double precision;
 			switch (select)
 			{
 			case 1:
@@ -136,9 +139,9 @@ int main() {
 				stop = new Iterations(n_iter);
 				break;
 			case 2:
-				double precision;
 				std::cout << "Please write precision (double: 1e-16:1e-1)										" << std::endl << std::endl;
 				std::cin >> precision;
+				//std::cout << double(precision);
 				if ((precision < 1e-16) || (precision > 1e-1)) {
 					throw std::invalid_argument("Invalid selection");
 				}

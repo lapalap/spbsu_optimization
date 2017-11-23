@@ -22,10 +22,10 @@ public:
 /*! Heir of STOP class: Stop by vector norm */
 class ArgNorm : public STOP {
 	double eps;
-	double sum;
+	double sum = 1;
 	unsigned int N_iter = 0, N_MAX = 1000000;
 public:
-	ArgNorm(double eps);
+	ArgNorm(double epsilon);
 	bool status();
 
 	void update(std::vector<double> x_curr, std::vector<double> x_prev, double f_curr, double f_prev);
