@@ -68,7 +68,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Probability of local search</string>
+      <string>Probability of global search</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="RSprob">

@@ -26,18 +26,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QLineEdit* MaxCounter = findChild<QLineEdit*>("MaxCounter");
     MaxCounter->setValidator(new QIntValidator(50,40000,MaxCounter));
+    QLineEdit* MaxCounter_2 = findChild<QLineEdit*>("MaxCounter_2");
+    MaxCounter_2->setValidator(new QIntValidator(50,40000,MaxCounter_2));
 
     QObject::connect(render,&qtDRAWER::ResultVal,this,&MainWindow::ResultEval);
     QObject::connect(render,&qtDRAWER::ResultArgmin,this,&MainWindow::ResultArgmin);
     QObject::connect(render,&qtDRAWER::ResultNiter,this,&MainWindow::ResultNiter);
-
-//    QObject::connect(render,&qtDRAWER::SignResultEval,this,&MainWindow::ResultEval);
-//    QObject::connect(render,&qtDRAWER::SignSetCounter,this,&MainWindow::SetCounter);
-//    QObject::connect(render,&qtDRAWER::SignSet_fx,this,&MainWindow::Set_fx);
-//    QObject::connect(render,&qtDRAWER::SignSet_fy,this,&MainWindow::Set_fy);
-//    QObject::connect(render,&qtDRAWER::SignSetDomMax,this,&MainWindow::SetDomMax);
-//    QObject::connect(render,&qtDRAWER::SignSetDomMin,this,&MainWindow::SetDomMin);
-//
 }
 
 void MainWindow::on_radioButtonRS_iter_clicked(bool checked) {
@@ -66,11 +60,6 @@ void MainWindow::aboutBox()
 {
   QMessageBox::about(this, "SPbSU C++ class", "(c) lapalap 2017");
 }
-
-//void MainWindow::SetCounter(int i) {
-//    QString vall = QString::number(i);
-//    ui->ResultCounter->setText(vall);
-//}
 
 void MainWindow::on_radioButtonRS_clicked(bool checked)
 {

@@ -13,12 +13,8 @@ void qtDRAWER::mouseMoveEvent(QMouseEvent *event) {
     int x=event->x();
     int y=event->y();
     QSize sz = size();
-    int width=sz.width(); // ширина
-    int height=sz.height(); // высота
-//    double result = field->mf->evaluate(field->ConvertPoint(width,height,x,y));
-
-//    QString vall = "Evaluate in ("+QString::number(field->ConvertPoint(width,height,x,y)[0],'f',6)+","+QString::number(field->ConvertPoint(width,height,x,y)[1],'f',6)+") is "+QString::number(result,'f',6);
-//    emit EvalFunction(vall);
+    int width=sz.width();
+    int height=sz.height();
 }
 
 
@@ -26,8 +22,8 @@ void qtDRAWER::mousePressEvent(QMouseEvent* event){
       int x=event->x();
       int y=event->y();
       QSize sz = size();
-      int width=sz.width(); // ширина
-      int height=sz.height(); // высота
+      int width=sz.width();
+      int height=sz.height();
       field->Optimize(width,height,x,y);
       printResult();
       repaint();
@@ -42,8 +38,8 @@ void qtDRAWER::printResult()
 
 QPointF qtDRAWER::ConvertVect(const std::vector<double> x0) {
     QSize sz = size();
-    int width=sz.width(); // ширина
-    int height=sz.height(); // высота
+    int width=sz.width();
+    int height=sz.height();
     return QPointF(
                 (x0[0]-field->rectangle->get_bounds()[0])/
             (field->rectangle->get_bounds()[1]-field->rectangle->get_bounds()[0])*width,
@@ -57,8 +53,8 @@ void qtDRAWER::paintEvent(QPaintEvent *)
     QPen pen;
     QSize sz = size();
 
-    int width=sz.width(); // ширина
-    int height=sz.height(); // высота
+    int width=sz.width();
+    int height=sz.height();
 
     field->CreateGrid(width,height,Npart);
     auto it = field->RangeField.begin();
